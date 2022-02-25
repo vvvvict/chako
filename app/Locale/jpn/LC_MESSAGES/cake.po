@@ -1,0 +1,398 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/Scaffold.php:127
+msgid "Scaffold :: "
+msgstr "足場 Scaffold :: "
+
+#: Controller/Scaffold.php:168;235;304
+msgid "Invalid %s"
+msgstr "%s は無効です"
+
+#: Controller/Scaffold.php:223
+msgid "updated"
+msgstr "更新されました"
+
+#: Controller/Scaffold.php:226
+msgid "saved"
+msgstr "保存されました"
+
+#: Controller/Scaffold.php:246
+msgid "The %1$s has been %2$s"
+msgstr "%1$ は %2$ になりました。"
+
+#: Controller/Scaffold.php:256
+msgid "Please correct errors below."
+msgstr "以下のエラーを修正してください。"
+
+#: Controller/Scaffold.php:307
+msgid "The %1$s with id: %2$s has been deleted."
+msgstr "ID：%2$ の %1$ が削除されました。"
+
+#: Controller/Scaffold.php:310
+msgid "There was an error deleting the %1$s with id: %2$s"
+msgstr "IDが%1$の削除中にエラーが発生しました：%2$"
+
+#: Controller/Component/AuthComponent.php:435
+msgid "You are not authorized to access that location."
+msgstr "あなたはその場所にアクセスする権限がありません。"
+
+#: Error/ExceptionRenderer.php:225
+msgid "Not Found"
+msgstr "見つかりませんでした。"
+
+#: Error/ExceptionRenderer.php:248
+msgid "An Internal Error Has Occurred."
+msgstr "内部エラーが発生しました。"
+
+#: Model/Validator/CakeValidationSet.php:286
+msgid "This field cannot be left blank"
+msgstr "このフィールドを空白のままにすることはできません。"
+
+#: Network/CakeResponse.php:1366
+msgid "The requested file was not found"
+msgstr "要求されたファイルが見つかりませんでした。"
+
+#: Utility/CakeNumber.php:119
+msgid "%s KB"
+msgstr "%s KB"
+
+#: Utility/CakeNumber.php:121
+msgid "%s MB"
+msgstr ""
+
+#: Utility/CakeNumber.php:123
+msgid "%s GB"
+msgstr ""
+
+#: Utility/CakeNumber.php:125
+msgid "%s TB"
+msgstr ""
+
+#: Utility/CakeNumber.php:117
+msgid "%d Byte"
+msgid_plural "%d Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Utility/CakeText.php:657
+msgid "and"
+msgstr ""
+
+#: Utility/CakeTime.php:398
+msgid "Today, %s"
+msgstr "今日, %s"
+
+#: Utility/CakeTime.php:402
+msgid "Yesterday, %s"
+msgstr "昨日, %s"
+
+#: Utility/CakeTime.php:406
+msgid "Tomorrow, %s"
+msgstr "明日, %s"
+
+#: Utility/CakeTime.php:411
+msgid "Sunday"
+msgstr "日曜日"
+
+#: Utility/CakeTime.php:412
+msgid "Monday"
+msgstr "月曜日"
+
+#: Utility/CakeTime.php:413
+msgid "Tuesday"
+msgstr "火曜日"
+
+#: Utility/CakeTime.php:414
+msgid "Wednesday"
+msgstr "水曜日"
+
+#: Utility/CakeTime.php:415
+msgid "Thursday"
+msgstr "木曜日"
+
+#: Utility/CakeTime.php:416
+msgid "Friday"
+msgstr "金曜日"
+
+#: Utility/CakeTime.php:417
+msgid "Saturday"
+msgstr "土曜日"
+
+#: Utility/CakeTime.php:425
+msgid "On %s %s"
+msgstr ""
+
+#: Utility/CakeTime.php:749
+msgid "%s ago"
+msgstr "%s 前に"
+
+#: Utility/CakeTime.php:750
+msgid "in %s"
+msgstr ""
+
+#: Utility/CakeTime.php:751
+msgid "on %s"
+msgstr ""
+
+#: Utility/CakeTime.php:807
+msgid "just now"
+msgstr "たった今"
+
+#: Utility/CakeTime.php:930
+msgid "in about a second"
+msgstr "約1秒で。"
+
+#: Utility/CakeTime.php:931
+msgid "in about a minute"
+msgstr "約1分で。"
+
+#: Utility/CakeTime.php:932
+msgid "in about an hour"
+msgstr "約1時間で。"
+
+#: Utility/CakeTime.php:933
+msgid "in about a day"
+msgstr "約1日で。"
+
+#: Utility/CakeTime.php:934
+msgid "in about a week"
+msgstr "約1週間で。"
+
+#: Utility/CakeTime.php:935
+msgid "in about a year"
+msgstr "約1年間で。"
+
+#: Utility/CakeTime.php:939
+msgid "about a second ago"
+msgstr "約1秒前。"
+
+#: Utility/CakeTime.php:940
+msgid "about a minute ago"
+msgstr "約1分前。"
+
+#: Utility/CakeTime.php:941
+msgid "about an hour ago"
+msgstr "約1時間前。"
+
+#: Utility/CakeTime.php:942
+msgid "about a day ago"
+msgstr "約1日前。"
+
+#: Utility/CakeTime.php:943
+msgid "about a week ago"
+msgstr "約1週間前。"
+
+#: Utility/CakeTime.php:944
+msgid "about a year ago"
+msgstr "約1年前。"
+
+#: Utility/CakeTime.php:964;986
+msgid "days"
+msgstr ""
+
+#: Utility/CakeTime.php:901
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d 年"
+msgstr[1] "%d 年間"
+
+#: Utility/CakeTime.php:904
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d ヶ月"
+msgstr[1] "%d ヶ月間"
+
+#: Utility/CakeTime.php:907
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d 週"
+msgstr[1] "%d 週間"
+
+#: Utility/CakeTime.php:910
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d 日"
+msgstr[1] "%d 日間"
+
+#: Utility/CakeTime.php:913
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d 時間"
+msgstr[1] "%d 時間"
+
+#: Utility/CakeTime.php:916
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d 分"
+msgstr[1] "%d 分間"
+
+#: Utility/CakeTime.php:919
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d 秒"
+msgstr[1] "%d 秒間"
+
+#: View/ViewBlock.php:78
+msgid "A view block with the name '%s' is already/still open."
+msgstr "'%s'という名前のビューブロックはすでに/まだ開いています。"
+
+#: View/Helper/FormHelper.php:780
+msgid "Error in field %s"
+msgstr "フィールド%sのエラー"
+
+#: View/Helper/FormHelper.php:976
+#: View/Scaffolds/form.ctp:46
+#: View/Scaffolds/index.ctp:77;92
+#: View/Scaffolds/view.ctp:63;78;188
+msgid "New %s"
+msgstr "%sを追加"
+
+#: View/Helper/FormHelper.php:982
+#: View/Scaffolds/view.ctp:51;109
+msgid "Edit %s"
+msgstr "%sを編集"
+
+#: View/Helper/FormHelper.php:1580
+msgid "empty"
+msgstr "empty(空)"
+
+#: View/Helper/FormHelper.php:2001
+#: View/Scaffolds/form.ctp:21
+msgid "Submit"
+msgstr "実行"
+
+#: View/Helper/FormHelper.php:3005
+msgid "January"
+msgstr "１月"
+
+#: View/Helper/FormHelper.php:3006
+msgid "February"
+msgstr "２月"
+
+#: View/Helper/FormHelper.php:3007
+msgid "March"
+msgstr "３月"
+
+#: View/Helper/FormHelper.php:3008
+msgid "April"
+msgstr "４月"
+
+#: View/Helper/FormHelper.php:3009
+msgid "May"
+msgstr "５月"
+
+#: View/Helper/FormHelper.php:3010
+msgid "June"
+msgstr "６月"
+
+#: View/Helper/FormHelper.php:3011
+msgid "July"
+msgstr "７月"
+
+#: View/Helper/FormHelper.php:3012
+msgid "August"
+msgstr "８月"
+
+#: View/Helper/FormHelper.php:3013
+msgid "September"
+msgstr "９月"
+
+#: View/Helper/FormHelper.php:3014
+msgid "October"
+msgstr "１０月"
+
+#: View/Helper/FormHelper.php:3015
+msgid "November"
+msgstr "１１月"
+
+#: View/Helper/FormHelper.php:3016
+msgid "December"
+msgstr "１２月"
+
+#: View/Helper/HtmlHelper.php:797
+msgid "Home"
+msgstr "ホームへ"
+
+#: View/Helper/HtmlHelper.php:853
+msgid "Unable to find the requested image to output as base64!"
+msgstr "base64として出力するリクエストされた画像が見つかりません！"
+
+#: View/Helper/PaginatorHelper.php:664
+msgid " of "
+msgstr " of(～の) "
+
+#: View/Scaffolds/form.ctp:25
+#: View/Scaffolds/index.ctp:24;75
+#: View/Scaffolds/view.ctp:47
+msgid "Actions"
+msgstr "アクション"
+
+#: View/Scaffolds/form.ctp:29
+#: View/Scaffolds/index.ctp:49
+#: View/Scaffolds/view.ctp:173
+msgid "Delete"
+msgstr "削除"
+
+#: View/Scaffolds/form.ctp:32
+#: View/Scaffolds/index.ctp:52
+#: View/Scaffolds/view.ctp:55;176
+msgid "Are you sure you want to delete # %s?"
+msgstr "＃%sを削除してもよろしいですか？"
+
+#: View/Scaffolds/form.ctp:35
+msgid "List"
+msgstr "リスト"
+
+#: View/Scaffolds/form.ctp:42
+#: View/Scaffolds/index.ctp:85
+#: View/Scaffolds/view.ctp:59;72
+msgid "List %s"
+msgstr "リスト %s"
+
+#: View/Scaffolds/index.ctp:46
+#: View/Scaffolds/view.ctp:161
+msgid "View"
+msgstr "内容表示(View)"
+
+#: View/Scaffolds/index.ctp:47
+#: View/Scaffolds/view.ctp:167
+msgid "Edit"
+msgstr "編集"
+
+#: View/Scaffolds/index.ctp:63
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr "ページ {:page} /{:pages}, {:current}件づつ表示。 計{:count}件のうち、{:start}から{:end}件目を表示しています。★Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}★"
+
+#: View/Scaffolds/index.ctp:68
+msgid "previous"
+msgstr "前へ"
+
+#: View/Scaffolds/index.ctp:70
+msgid "next"
+msgstr "次へ"
+
+#: View/Scaffolds/view.ctp:18
+msgid "View %s"
+msgstr "%s を表示"
+
+#: View/Scaffolds/view.ctp:55
+msgid "Delete %s"
+msgstr "%s を削除"
+
+#: View/Scaffolds/view.ctp:93;133
+msgid "Related %s"
+msgstr "%s 関連"
+

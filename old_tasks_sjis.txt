@@ -1,0 +1,144 @@
+"id","name","body","status","due_date","created","modified"
+2,"休憩","5分以上休憩をとる",0,,2022/02/19 20:55:17,2022/02/19 20:55:17
+3,"WindowsでCakePHP2のBakeやり方","C:xampphtdogs
+にCakePHP2.10.24のアプリディレクトリ（例chako）を作る
+C:xampphtdocschako>appconsolecake bake を実行。
+(以下確認内容)-----------------------
+Name:         default
+Datasource:   Mysql
+Persistent:   false
+Host:         localhost
+User:         root
+Pass:
+Database:     hirodb
+-----------------------
+続けて、
+C:xampphtdocschako>appconsolecake bake all task　を実行する。
+これでコントローラー(tasks)やビューができている。
+
+ブラウザで次のURLを入れる。
+http://localhost/chako/tasks　でアプリが実行できる。
+テーブル名(例 tasks)
+データベース名(例 hirodb)
+システム環境パスにはxamppのphpを通しておく。",0,,2022/02/19 21:43:49,2022/02/19 21:43:49
+6,"bakeテンプレートから生成されるデフォルトのHTMLを変更する","bakeテンプレートから生成されるデフォルトのHTMLを変更する
+bake コマンドで生成されるデフォルトの HTML 出力を変更したい場合、 次のようなステップでやります。
+
+カスタムビューを作る
+lib/Cake/Console/Templates/default/views に移動します。
+
+その中に、4つのファイルがあります。
+
+それらのファイルを app/Console/Templates/[themename]/views にコピーします。
+
+ビューを ""bake"" で構築する方法を制御するために HTML 出力に変更を加えます。
+
+[themename] は、自分で自由につけれる bake のテーマ名です。 bake のテーマ名はユニークである必要がありますので、'default' は使わないでください。",0,,2022/02/19 22:27:54,2022/02/19 22:27:54
+7,"bakeテンプレート(カスタムプロジェクトを作る)","カスタムプロジェクトを作る
+lib/Cake/Console/Templates/skel に移動します。
+
+その中に、アプリケーションのベースとなるファイルがあります。
+
+それらのファイルを app/Console/Templates/skel にコピーします。
+
+ビューを ""bake"" で構築する方法を制御するために HTML 出力に変更を加えます。
+
+project タスクにスケルトンのパスをパラメータとして渡します。
+
+cake bake project --skel Console/Templates/skel",0,,2022/02/19 22:29:26,2022/02/19 22:30:22
+8,"CakePHP2 scaffolt","C:xampphtdogs にCakePHP2.10.24のアプリディレクトリ（例chako）を作る 
+（１回目）
+C:xampphtdocschako>appconsolecake bake を実行。続けて、 
+（２回目）
+C:xampphtdocschako>appconsolecake bake （上と同じ）を実行する。
+対話画面で、どのM,V,C,テーブル,スキャッフォルトなど選びながら進められる。
+ブラウザで次のURLを入れる。 http://localhost/chako/tasks　でアプリが実行できる。
+テーブル名(例 tasks) 
+データベース名(例 hirodb) 
+システム環境パスにはxamppのphpを通しておく。
+
+",0,,2022/02/19 22:48:00,2022/02/19 22:48:00
+9,"cakePHPのctpファイルを、PhpStormでコード補完できるようにする","コード補完を効かせるために
+なぜctpファイルはコード補完が利かなくなってしまうのかという原因は、PHPStormが現在編集しているctpファイルがどのクラスに属しているかを把握していないからということらしいです。
+したがって、どのクラスに属しているのかをctpファイルの初めに書いてやる必要があります。
+/*
+*↓↓ctpファイルの初めの行に以下の行を追加する。↓↓
+*@var AppViewAppView $this
+*/",0,2022/02/20,2022/02/20 11:36:10,2022/02/20 11:36:10
+10,"CakePHP2系をサクッと日本語化する方法","１．ディレクトリを作成する
+[app/Locale]の下に[jpn]フォルダを作り、さらにその下に[LC_MESSAGES]フォルダを作る。
+このコマンドが便利。
+mkdir -p Locale/jpn/LC_MESSAGES
+２．i18nコマンドでpotファイルを作成する
+cakeコマンドを実行する。
+./cake i18n
+potファイルを作成するのでEを選択。
+
+[E]xtract POT file from sources
+[I]nitialize i18n database table
+[H]elp
+[Q]uit
+What would you like to do? (E/I/H/Q)
+> E
+
+コアからも書き出すのでYを選択。
+
+Would you like to extract the messages from the CakePHP core? (y/n)
+[n] > y
+先ほど作成したフォルダ内にpotファイルを書き出すので、パスを指定する。
+
+What is the path you would like to output?
+[Q]uit
+[/pub/cakephp3/app/Locale] > /pub/cakephp3/app/Locale/jpn/LC_MESSAGES/
+出力されるファイルをひとつにまとめたいので、Yを選択。
+
+Would you like to merge all domain and category strings into the default.pot file? (y/n)
+[n] > y
+以上でpotファイルが[app/Locale/jpn/LC_MESSAGES/]フォルダ内に抽出される。
+フォルダ内に[default.pot]があるので、[default.po]に名前を変更する。これ注意。
+３．実際に日本語化してみる
+あとは[default.po]ファイルを適宜変更する。
+例えば[View]を[詳細]などに日本語化する場合はこんな感じ。
+#: View/Customers/index.ctp:16
+#: View/Customers/view.ctp:62
+msgid ""View""
+msgstr ""詳細""",0,,2022/02/20 14:28:52,2022/02/20 14:28:52
+11,"CakePHP日本語化はConfigure::write('Session', array('language' => 'jpn');","(app/Config/core.php)
+Configure::write('Session', array('language' => 'jpn',
+#    'ini' => array('session.cookie_secure' => false)
+)
+);",0,,2022/02/20 22:46:20,2022/02/20 22:46:20
+12,"aaaてすと","vvvテスト",0,,2022/02/20 22:49:54,2022/02/20 22:49:54
+13,"CakePHP 日本語化","（'Session'に'language' => 'jpn',の部分を追加する）
+
+/* app/Config/core.php */
+Configure::write('Session', array(
+		'defaults' => 'php',
+		'language' => 'jpn',
+	));
+",0,,2022/02/20 22:59:55,2022/02/20 22:59:55
+14,"唯がくれた入浴剤","花王 バブ メディキュア ほぐ軽スッキリ 70g 【医薬部外品】
+JANコード　4901301350237",0,,2022/02/20 23:23:07,2022/02/20 23:23:07
+15,"CakePHP2 DebugKitの準備","・デバッグキットをダウンロード＆展開し、次のフォルダへコピーする。
+C:\xampp\htdocs\omega\Plugin\DebugKit
+
+・以下のように、コメントから外す(80行目付近)。
+C:\xampp\htdocs\omega\Config\bootstrap.php　
+
+ * CakePlugin::loadAll(); // Loads all plugins at once
+ * CakePlugin::load('DebugKit'); // Loads a single plugin named DebugKit
+ */
+CakePlugin::load('DebugKit'); // Loads a single plugin named DebugKit
+//CakePlugin::load('Search');
+//CakePlugin::load('BoostCake');
+
+・次にAppController で、public $componentsにデバッグキットツールバーを指定。
+class AppController extends Controller{
+
+	public $components = array(
+			'DebugKit.Toolbar',
+			'Session',",0,,2022/02/20 23:53:58,2022/02/20 23:53:58
+19,"CakePHP2「Call to a member function success() on a non-object」 エラーが発生したら","原因はコントローラーにて、'Flash'コンポーネントが設定されていなかったから。
+public $components = array('Paginator', 'Flash');
+これでエラーが解消されて、フラッシュメッセージが無事表示される。
+bake コマンドの時点で FlashComponent を設定しておいてくれればいいのに。",0,,2022/02/21 0:16:46,2022/02/21 0:16:46
