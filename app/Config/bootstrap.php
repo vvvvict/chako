@@ -25,6 +25,7 @@
 // Setup a 'default' cache configuration for use in the application.
 Cache::config('default', array('engine' => 'File'));
 
+
 /**
  * The settings below can be used to set additional paths to models, views and controllers.
  *
@@ -66,9 +67,13 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::loadAll(); // Loads all plugins at once
  * CakePlugin::load('DebugKit'); // Loads a single plugin named DebugKit
  */
-CakePlugin::loadAll(); // Loads all plugins at once
+//CakePlugin::loadAll(); // Loads all plugins at once
 //CakePlugin::load('DebugKit'); // Loads a single plugin named DebugKit
 
+if (Configure::read('debug') > 0) {
+	CakePlugin::load('DebugKit');
+	CakePlugin::load('PrettyDebug');
+}
 /**
  * To prefer app translation over plugin translation, you can set
  *
@@ -112,3 +117,32 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
+define('SIDE_SALE' , "1");
+define('SIDE_BUY' , "2");
+
+define('DELIVTYPE_NONE' , 0);
+define('DELIVTYPE_AZUKARIKIN' , 2);
+
+define('EXCHANGE_TOSHOU' , 1);
+define('EXCHANGE_SOR' , 9);
+
+define('SECURITYTYPE_KABUSHIKI' , 1);
+
+define('CASHMARGIN_GENBUTSU' , 1);
+define('CASHMARGIN_OPEN' , 2);
+define('CASHMARGIN_CLOSE' , 3);
+
+define('MARGINTRADETYPE_SEIDO' , 1);
+define('MARGINTRADETYPE_IPPAN' , 2);
+
+define('CLOSEPOSITIONORDER_PROFIT_OLD' , 4);
+define('CLOSEPOSITIONORDER_PROFIT_NEW' , 5);
+
+define('FUNDTYPE_SHINYOUDAIYOU' , "AA");
+define('FUNDTYPE_NONE' , "  ");
+
+define('ACCOUNTTYPE_TOKUTEI' , 4);
+
+define('FRONTORDERTYPE_NARIYUKI' , 10);
+define('FRONTORDERTYPE_SASHINE' , 20);
+define('FRONTORDERTYPE_GOBA_YORISASHI' , 22);

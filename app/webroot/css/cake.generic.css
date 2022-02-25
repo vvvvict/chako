@@ -16,10 +16,10 @@
  */
 
 * {
-	margin:0;
-	padding:0;
+	/*margin:0;*/
+	margin:0px;
+	/*padding:0;*/
 }
-
 /** General Style Info **/
 body {
 	background: #003d4c;
@@ -41,8 +41,8 @@ a img {
 	border:none;
 }
 h1, h2, h3, h4 {
-	font-weight: normal;
-	margin-bottom:0.5em;
+	/*font-weight: normal;*/
+	/*margin-bottom:0.5em;*/
 }
 h1 {
 	background:#fff;
@@ -53,20 +53,26 @@ h2 {
 	background:#fff;
 	color: #e32;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
-	font-size: 190%;
+	font-size: 125%;
 }
 h3 {
 	color: #2c6877;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
-	font-size: 165%;
+	font-size: 125%;
 }
-h4 {
+h4 {h-shiota
 	color: #993;
 	font-weight: normal;
 }
 ul, li {
 	margin: 0 12px;
+	/*float: left;*/
 }
+li {
+	margin: 5px;
+	padding: 5px;
+}
+
 p {
 	margin: 0 0 1em 0;
 }
@@ -77,30 +83,34 @@ p {
 }
 
 #header{
-	padding: 10px 20px;
+	padding: 0px 0px;
+	/*padding: 2px 5px;*/
 }
 #header h1 {
-	line-height:20px;
+	/*line-height:20px;*/
 	background: #003d4c url('../img/cake.icon.png') no-repeat left;
 	color: #fff;
-	padding: 0 30px;
+	/*padding: 15px 30px;*/
+	/*margin: 0px;*/
 }
 #header h1 a {
 	color: #fff;
-	background: #003d4c;
+	background: #7afb19a6;
 	font-weight: normal;
 	text-decoration: none;
+/*width: 10%;*/
+/*float: left;*/
 }
 #header h1 a:hover {
 	color: #fff;
-	background: #003d4c;
-	text-decoration: underline;
+	background: #50c9cc;
+	/*text-decoration: underline;*/
 }
 #content{
 	background: #fff;
 	clear: both;
 	color: #333;
-	padding: 10px 20px 40px 20px;
+	/*padding: 10px 20px 40px 20px;*/
 	overflow: auto;
 }
 #footer {
@@ -118,22 +128,22 @@ p {
 div.form,
 div.index,
 div.view {
-	float:right;
-	width:76%;
-	border-left:1px solid #666;
-	padding:10px 2%;
+	/*float:right;*/
 }
 div.actions {
 	float:left;
-	width:16%;
-	padding:10px 1.5%;
 }
-div.actions h3 {
+div.actions,
+div.top_actions {
+	/*width:16%;*/
+	padding:5px 1.5%;
+	/*padding:10px 1.5%;*/
+}
+div.actions h3,
+div.top_actions h3 {
 	padding-top:0;
 	color:#777;
 }
-
-
 /** Tables **/
 table {
 	border-right:0;
@@ -165,16 +175,22 @@ table tr td {
 	vertical-align: top;
 	border-bottom:1px solid #ddd;
 }
-table tr:nth-child(even) {
-	background: #f9f9f9;
+table tr:nth-child() {
+	background: #f6cdcd;
 }
-td.actions {
+table tr:nth-child(even) {
+	background: #f6cdcd;
+}
+td.actions,
+td.top_actions
+ {
 	text-align: center;
 	white-space: nowrap;
 }
-table td.actions a {
-	margin: 0 6px;
-	padding:2px 5px;
+table td.actions a,
+table td.top_actions a {
+	margin: 0 4px;
+	padding:9px 6px;
 }
 
 /* SQL log */
@@ -201,12 +217,12 @@ table td.actions a {
 .paging .disabled,
 .paging a {
 	text-decoration: none;
-	padding: 5px 8px;
+	/*padding: 5px 8px;*/
 	display: inline-block
 }
 .paging > span {
 	display: inline-block;
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	border-left: 0;
 }
 .paging > span:hover {
@@ -236,9 +252,9 @@ table td.actions a {
 
 /** Scaffold View **/
 dl {
-	line-height: 2em;
+	line-height: 1.6em;
 	margin: 0em 0em;
-	width: 60%;
+	/*width: 60%;*/
 }
 dl dd:nth-child(4n+2),
 dl dt:nth-child(4n+1) {
@@ -249,16 +265,17 @@ dt {
 	font-weight: bold;
 	padding-left: 4px;
 	vertical-align: top;
-	width: 10em;
+	/*width: 10em;*/
 }
 dd {
-	margin-left: 10em;
-	margin-top: -2em;
+	/*margin-left: 10em;*/
+	/*margin-top: -2em;*/
 	vertical-align: top;
 }
 
 /** Forms **/
-form {
+form,
+botom_form {
 	clear: both;
 	margin-right: 20px;
 	padding: 0;
@@ -286,27 +303,32 @@ fieldset fieldset div {
 	clear: left;
 	margin: 0 20px;
 }
-form div {
+form div,
+botom_form div {
 	clear: both;
-	margin-bottom: 1em;
-	padding: .5em;
+	/*margin-bottom: 1em;*/
+	/*padding: .5em;*/
 	vertical-align: text-top;
 }
-form .input {
+form .input,
+botom_form .input {
 	color: #444;
 }
-form .required {
+form .required,
+botom_form .required {
 	font-weight: bold;
 }
-form .required label:after {
+form .required label:after,
+botom_form .required label:after {
 	color: #e32;
 	content: '*';
 	display:inline;
 }
-form div.submit {
+form div.submit,
+botom_form div.submit {
 	border: 0;
 	clear: both;
-	margin-top: 10px;
+	margin: 10px;
 }
 label {
 	display: block;
@@ -352,12 +374,16 @@ input[type=radio] {
 	margin: 0 0 6px 20px;
 	line-height: 26px;
 }
+.submit input[onclick],
 input[type=submit] {
 	display: inline;
 	font-size: 110%;
 	width: auto;
 }
-form .submit input[type=submit] {
+form .submit input[onclick],
+form .submit input[type=submit],
+botom_form .submit input[onclick],
+botom_form .submit input[type=submit] {
 	background:#62af56;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
 	background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
@@ -366,19 +392,24 @@ form .submit input[type=submit] {
 	color: #fff;
 	text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0;
 	padding: 8px 10px;
+	border-radius: 7px;
 }
-form .submit input[type=submit]:hover {
+.submit input[onclick]:hover,
+form .submit input[type=submit]:hover,
+botom_form .submit input[type=submit]:hover {
 	background: #5BA150;
 }
 /* Form errors */
-form .error {
+form .error,
+botom_form .error {
 	background: #FFDACC;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 	font-weight: normal;
 }
-form .error-message {
+form .error-message,
+botom_form .error-message {
 	-moz-border-radius: none;
 	-webkit-border-radius: none;
 	border-radius: none;
@@ -389,7 +420,9 @@ form .error-message {
 	padding-right: 0;
 }
 form .error,
-form .error-message {
+form .error-message,
+botom_form .error,
+botom_form .error-message {
 	color: #9E2424;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -491,42 +524,45 @@ p.error em {
 }
 
 /**  Actions  **/
-.actions ul {
+.actions ul,
+.top_actions ul {
 	margin: 0;
 	padding: 0;
 }
-.actions li {
+.actions li,
+.top_actions li {
 	margin:0 0 0.5em 0;
 	list-style-type: none;
 	white-space: nowrap;
 	padding: 0;
 }
-.actions ul li a {
+.actions ul li a,
+.top_actions ul li a {
 	font-weight: normal;
-	display: block;
+	/*display: block;*/
 	clear: both;
 }
 
 /* Buttons and button links */
+.user_button
+.submit input[onclick],
 input[type=submit],
-.actions ul li a,
-.actions a {
-	font-weight:normal;
-	padding: 4px 8px;
-	background: #dcdcdc;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#dcdcdc));
-	background-image: -webkit-linear-gradient(top, #fefefe, #dcdcdc);
-	background-image: -moz-linear-gradient(top, #fefefe, #dcdcdc);
-	background-image: -ms-linear-gradient(top, #fefefe, #dcdcdc);
-	background-image: -o-linear-gradient(top, #fefefe, #dcdcdc);
-	background-image: linear-gradient(top, #fefefe, #dcdcdc);
-	color:#333;
-	border:1px solid #bbb;
+/*.actions ul li a,*/
+.actions a,
+.top_actions ul li a,
+.top_actions a {
+	font-weight:600;
+	font-size: 15px;
+	/*padding: 2px 4px;*/
+	padding: 0px 5px;
+	background: #4fdd6333;
+	/*color:#1144b7;*/
+	/*border:1px solid #bbb;*/
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
-	border-radius: 4px;
+	border-radius: 7px;
 	text-decoration: none;
-	text-shadow: #fff 0 1px 0;
+	/*text-shadow: #fff 0 1px 0;*/
 	min-width: 0;
 	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.2);
 	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -535,14 +571,20 @@ input[type=submit],
 	user-select: none;
 }
 .actions ul li a:hover,
-.actions a:hover {
+.actions a:hover,
+.top_actions ul li a:hover,
+.too_actions a:hover {
 	background: #ededed;
 	border-color: #acacac;
 	text-decoration: none;
 }
+.user_button
+.submit input[onclick]:active,
 input[type=submit]:active,
 .actions ul li a:active,
-.actions a:active {
+.actions a:active,
+.top_actions ul li a:active,
+.top_actions a:active {
 	background: #eee;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#eee));
 	background-image: -webkit-linear-gradient(top, #dfdfdf, #eee);
@@ -740,4 +782,8 @@ pre {
 /** Elements **/
 #url-rewriting-warning {
 	display:none;
+}
+
+.top_actions li{
+	float: left;
 }

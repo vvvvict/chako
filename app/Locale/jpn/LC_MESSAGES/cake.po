@@ -15,7 +15,7 @@ msgstr ""
 
 #: Controller/Scaffold.php:127
 msgid "Scaffold :: "
-msgstr "足場 Scaffold :: "
+msgstr "足場(Scaffold) :: "
 
 #: Controller/Scaffold.php:168;235;304
 msgid "Invalid %s"
@@ -67,7 +67,7 @@ msgstr "要求されたファイルが見つかりませんでした。"
 
 #: Utility/CakeNumber.php:119
 msgid "%s KB"
-msgstr "%s KB"
+msgstr ""
 
 #: Utility/CakeNumber.php:121
 msgid "%s MB"
@@ -89,7 +89,7 @@ msgstr[1] ""
 
 #: Utility/CakeText.php:657
 msgid "and"
-msgstr ""
+msgstr "および"
 
 #: Utility/CakeTime.php:398
 msgid "Today, %s"
@@ -201,7 +201,7 @@ msgstr "約1年前。"
 
 #: Utility/CakeTime.php:964;986
 msgid "days"
-msgstr ""
+msgstr "日間"
 
 #: Utility/CakeTime.php:901
 msgid "%d year"
@@ -257,6 +257,7 @@ msgstr "フィールド%sのエラー"
 #: View/Scaffolds/form.ctp:46
 #: View/Scaffolds/index.ctp:77;92
 #: View/Scaffolds/view.ctp:63;78;188
+#: View/Tasks/index.ctp:63
 msgid "New %s"
 msgstr "%sを追加"
 
@@ -272,7 +273,7 @@ msgstr "empty(空)"
 #: View/Helper/FormHelper.php:2001
 #: View/Scaffolds/form.ctp:21
 msgid "Submit"
-msgstr "実行"
+msgstr "保存"
 
 #: View/Helper/FormHelper.php:3005
 msgid "January"
@@ -374,7 +375,7 @@ msgstr "編集"
 
 #: View/Scaffolds/index.ctp:63
 msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
-msgstr "ページ {:page} /{:pages}, {:current}件づつ表示。 計{:count}件のうち、{:start}から{:end}件目を表示しています。★Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}★"
+msgstr "ページ {:page} /{:pages}, {:current}件づつ表示。 計{:count}件のうち、{:start}から{:end}件目を表示しています。"
 
 #: View/Scaffolds/index.ctp:68
 msgid "previous"
@@ -395,4 +396,3 @@ msgstr "%s を削除"
 #: View/Scaffolds/view.ctp:93;133
 msgid "Related %s"
 msgstr "%s 関連"
-

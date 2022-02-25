@@ -30,4 +30,16 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+//	public $recursive = 2;
+//	public $database_name = 'xfree';
+//	public $database_name = 'hirodb';
+//	public $database_name = 'chako_dev';
+
+	/**
+	 * 現在のデータベース名を格納する
+	 */
+//	public function setDatabaseName() {
+//		$db = ConnectionManager::getDataSource($this->useDbConfig);
+//		$this->database_name = $db->config['database'];
+//	}
 }

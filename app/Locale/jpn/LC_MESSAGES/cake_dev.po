@@ -13,6 +13,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+#: View/Tasks/index.ctp:63
+msgid "New"
+msgstr "追加"
+
+#: View/Layouts/default.ctp:18
+msgid "CakePHP: the rapid development php framework"
+msgstr "高速開発フレームワーク"
+
 #: Cache/Cache.php:173
 msgid "Cache engine %s is not available."
 msgstr ""
@@ -861,7 +869,7 @@ msgstr "Datasource　が間違っています。"
 
 #: View/Errors/missing_datasource.ctp:22
 msgid "Datasource class %s could not be found."
-msgstr ""
+msgstr "データソースクラス %s が見つかりませんでした。"
 
 #: View/Errors/missing_datasource_config.ctp:17
 msgid "Missing Datasource Configuration"

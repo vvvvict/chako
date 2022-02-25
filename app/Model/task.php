@@ -5,9 +5,9 @@ App::uses('AppModel', 'Model');
  * task Model
  *
  */
-class task extends AppModel {
+class Task extends AppModel {
+//	public $useTable='tasks';
 
-//	public $useTable='zzztasks';
 	public function readTask(){
 //		$this->setDataSource('default');//DB変更
 //		$this->setDataSource('new_db');//DB変更
@@ -15,7 +15,6 @@ class task extends AppModel {
 }
 /**
  * Validation rules
- *
  * @var array
  */
 	public $validate = array(
@@ -29,15 +28,15 @@ class task extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'body' => array(
-			'notBlank' => array(
-				'rule' => array('notBlank'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
+//		'body' => array(
+//			'notBlank' => array(
+//				'rule' => array('notBlank'),
+//				//'message' => 'Your custom message here',
+//				//'allowEmpty' => false,
+//				'required' => false,
+//				//'last' => false, // Stop validation after this rule
+//				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+//			),
+//		),
 	);
 }

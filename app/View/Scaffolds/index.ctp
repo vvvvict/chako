@@ -13,9 +13,7 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
-/** @var $this View */
 ?>
-<?php $this->Html->
 <div class="<?php echo $pluralVar; ?> index">
 <h2><?php echo $pluralHumanName; ?></h2>
 <table>
@@ -34,6 +32,7 @@ foreach (${$pluralVar} as ${$singularVar}):
 				foreach ($associations['belongsTo'] as $_alias => $_details):
 					if ($_field === $_details['foreignKey']):
 						$isKey = true;
+//						echo '<td class="actions">' . $this->Html->link(__d('cake', 'View'), array('action' => 'view', ${$singularVar}[$modelClass][$primaryKey]));
 						echo '<td>' . $this->Html->link(${$singularVar}[$_alias][$_details['displayField']], array('controller' => $_details['controller'], 'action' => 'view', ${$singularVar}[$_alias][$_details['primaryKey']])) . '</td>';
 						break;
 					endif;
@@ -75,10 +74,11 @@ endforeach;
 	?>
 	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __d('cake', 'Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__d('cake', 'New %s', $singularHumanName), array('action' => 'add')); ?></li>
+<!--<div class="actions">-->
+<div class="top_actions">
+	<h3><?php echo __d('cake', 'Actions'); ?>
+		<ul><li><?php echo $this->Html->link(__d('cake', 'New %s', $singularHumanName), array('action' => 'add')); ?></li>
+	</h3>
 <?php
 		$done = array();
 		foreach ($associations as $_type => $_data) {
@@ -90,7 +90,6 @@ endforeach;
 						array('plugin' => $_details['plugin'], 'controller' => $_details['controller'], 'action' => 'index')
 					);
 					echo '</li>';
-
 					echo '<li>';
 					echo $this->Html->link(
 						__d('cake', 'New %s', Inflector::humanize(Inflector::underscore($_alias))),

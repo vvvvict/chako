@@ -28,17 +28,21 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version());
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('tasks');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div id="container">
 		<div id="header">
 			<h1>
-			<?php echo $this->Html->link(__('Task '), array('controller'=>'tasks', 'action' => 'index')); ?>
-			<?php echo $this->Html->link(__('Kabu '), array('controller'=>'kabus', 'action'=>'index', 'class'=>'user_button')); ?>
+			<?php
+			echo 'ローカル（開発）';
+			echo $this->Html->link(__('Task '), array('controller'=>'tasks', 'action'=>'index'), array('class' =>'menu_button')); ?>
+<!--			--><?php //echo $this->Html->link(__('Kabu '), array('controller'=>'kabu', 'action'=>'index'), array('class'=>'menu_button')); ?>
 			</h1>
 		</div>
 		<div id="content">

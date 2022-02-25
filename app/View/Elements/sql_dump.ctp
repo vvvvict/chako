@@ -35,12 +35,12 @@ endif;
 
 if ($noLogs || isset($_forced_from_dbo_)):
 	foreach ($sqlLogs as $source => $logInfo):
-		$text = $logInfo['count'] > 1 ? '件のクエリー' : '件のクエリー';
+		$text = $logInfo['count'] > 1 ? '件のクエリ' : '件のクエリ';
 		printf(
-			'<table class="cake-sql-log" id="cakeSqlLog_%s" summary="Cake SQL Log" cellspacing="0">',
+			'<table class="cake-sql-log" id="cakeSqlLog_%s">',
 			preg_replace('/[^A-Za-z0-9_]/', '_', uniqid(time(), true))
 		);
-		printf('<caption>★★ (データソース:%s) %s%s 処理時間 %s ms ★（赤色表示は重複個所）</caption>', $source, $logInfo['count'], $text, $logInfo['time']);
+		printf('<caption>★★(データソース:%s) %s%s 処理時間 %s ms ★(赤色は重複個所)</caption>', $source, $logInfo['count'], $text, $logInfo['time']);
 	?>
 	<thead>
 		<tr><th>No</th><th>クエリ</th><th>ERR</th><th>効果</th><th>行数</th><th>処理(ms)</th></tr>
