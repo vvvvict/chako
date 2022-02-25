@@ -16,7 +16,7 @@
 ?>
 <div class="<?php echo $pluralVar; ?> index">
 	<h2><?php echo "<?php echo __('{$pluralHumanName}'); ?>"; ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table>
 	<thead>
 	<tr>
 	<?php foreach ($fields as $field): ?>

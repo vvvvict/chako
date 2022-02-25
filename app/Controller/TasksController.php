@@ -2,6 +2,7 @@
 App::uses('AppController', 'Controller');
 /**
  *  Tasks Controller
+ *
  * @property Task $Task
  * @property Old_task $Old_task
  * @property PaginatorComponent $Paginator
@@ -10,13 +11,16 @@ class TasksController extends AppController {
 
 /**
  * Components
- *
  * @var array
  */
 	public $components = array(
 		'Paginator',
 		'Flash'
 	);
+
+	/**
+	 * @var array
+	 */
 	public $paginate = array(
 		'limit' => 5,
 		'maxLimit' => 20000,
@@ -24,20 +28,25 @@ class TasksController extends AppController {
 //		'Tag' => array('queryScope' => 'tags'),
 //    'paramType' => 'named',
 //    'queryScope' => null,
-		'order' => array(
-				'id' => 'asc'
+		'order' => array('id' => 'asc'
 		)
 	);
+	/**
+	 * @var string[]
+	 */
 	public $uses = array(
 		'Task',
 		'Old_task'
 	);
+	/**
+	 * @var
+	 */
 	public $scaffold;
 
 /**
  * index method
  *
- * @return void
+// * @return void
  */
 	public function index() {
 //		$this->loadModel('Old_task');

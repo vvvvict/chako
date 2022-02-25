@@ -1,6 +1,9 @@
+<?php
+
+?>
 <div class="tasks index">
 	<h2><?php echo __('Tasks'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table>
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
@@ -12,7 +15,7 @@
 	</tr>
 	</thead>
 	<tbody>
-	<?php foreach ($tasks as $task): ?>
+	<?php	foreach ($tasks as $task): ?>
 	<tr>
 		<td><?php echo h($task['Task']['id']); ?>&nbsp;</td>
 		<td><?php echo h($task['Task']['name']); ?>&nbsp;</td>

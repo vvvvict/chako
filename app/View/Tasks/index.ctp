@@ -1,14 +1,14 @@
 <?php
-/** @var /app/View/TasksView $this */
-// /** @property Task $tasks */
+/** @var /pp/View/TasksView $this */
+/** @property Task $tasks */
 /** @var Task $tasks */
 ?>
 <div class="tasks index">
 	<h2><?php echo __('Tasks'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table>
 	<thead>
 	<tr>
-			<th><?php echo $this->Paginator->name; ?></th>
+			<th><?php echo $this->Paginator->id; ?></th>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th><?php echo $this->Paginator->sort('body'); ?></th>
